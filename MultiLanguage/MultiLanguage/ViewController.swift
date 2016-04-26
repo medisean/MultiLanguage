@@ -32,9 +32,9 @@ class ViewController: UIViewController, UIActionSheetDelegate {
 
     func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
         if buttonIndex == 1 {
-            InternationalControl.setCurrentLanguage(.SimplifiedChinese)
+            InternationalControl.currentLanguage = .SimplifiedChinese
         } else if buttonIndex == 2 {
-            InternationalControl.setCurrentLanguage(.English)
+            InternationalControl.currentLanguage = .English
         }
         self.commonInit()
     }
